@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1;
+    font-family: "Roboto", sans-serif;
+}
+
+::-ms-input-placeholder {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #1a67b8, #2572d9, #51e1ff, #e9e6ff);
+    background: #7474bf; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #348ac7,
+        #7474bf
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #348ac7,
+        #7474bf
+    ); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+
+    background: #ff8008; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #ffc837,
+        #ff8008
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #ffc837,
+        #ff8008
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: 600% 100%;
+    animation: bggradient 10s linear infinite;
+    animation-direction: alternate;
+    font-family: "Roboto", sans-serif;
+}
+
+@keyframes bggradient {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+.bgline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.logo {
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+.login {
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.login-wrap {
+    background: rgba(0, 0, 58, 0.8);
+    width: calc(100% - 140px);
+    padding: calc(50vh - 259px) 70px;
+    overflow: auto;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .login-wrap {
+        width: calc(100% - 200px);
+        padding: calc(50vh - 259px) 100px;
+
+    }
+}
+#signinbox {
+    display: block;
+    float: left;
+    margin-bottom: 114px;
+}
+
+@media (max-height: 518px) {
+    #signinbox {
+        margin-bottom: calc((100vh - 404px));
+    }
+}
+
+#signupbox {
+    display: none;
+    float: left;
+    /* margin-bottom: 20px; */
+}
+
+.inputfield {
+    height: 20px;
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0);
+    border: white solid 1px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+.inputfield::placeholder {
+    opacity: 0.5;
+}
+
+.inputsubmit {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.inputsubmit:active {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.submitfunc:after {
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25) 10px,
+        rgba(0, 0, 0, 0) 10px,
+        rgba(0, 0, 0, 0) 20px
+    );
+    -webkit-animation: AnimationProgress 5s linear infinite;
+    animation: AnimationProgress 5s linear infinite;
+    background-size: 300% 300%;
+    height: 40px;
+    width: 100%;
+    border: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    transition: all 1s ease-in-out;
+}
+
+@-webkit-keyframes AnimationProgress {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 94% 0%;
+    }
+}
+
+@keyframes AnimationProgress {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 94% 0%;
+    }
+}
+
+.spf {
+    width: 100%;
+    line-height: 20px;
+    margin-top: 30px;
+    color: #fff;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.spf a {
+    width: 100%;
+    float: right;
+}

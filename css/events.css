@@ -1,0 +1,533 @@
+@font-face {
+    font-family: Azonix;
+    src: url(../fonts/azonix-font/Azonix-1VB0.otf)
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #eee;
+}
+
+.wrapper_container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  margin-bottom: 0;
+  /* background: #000; */
+}
+
+.header {
+  width: 100%;
+  height: 15vh;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.5em;
+  font-size: 3.5rem;
+  color: #fff;
+  /* font-family: 'Nosifer', Helvetica, 'Times New Roman', Times, serif; */
+  font-family: Azonix;
+  text-align: center;
+  background: transparent;
+  /* background: red; */
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+
+.card_container{
+  width: 100%;
+  height: auto;
+  /* background: cyan; */
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  margin-top: 0;
+  margin-top: -14px;
+  padding: 14px 0;
+}
+
+.event_category_wrapper{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.event_card{
+  width: calc(65% - 20px);
+  height: calc(60vh - 20px);
+  padding: 10px;
+  /* background: blue; */
+     background: linear-gradient(45deg, #1c92d2, #f2fcfe);
+  margin: 0 auto;
+  margin-bottom: 14px;
+  clip-path: polygon(0 0, 100% 0, 100% 10%, 95% 14%, 95% 64%, 100% 68%, 100% 100%, 0 100%, 0 95%, 5% 91%, 5% 61%, 0 55%);
+  border-radius: 4px;
+  border: 2px solid white;
+}
+
+
+.thumbnail{
+  display: block;
+  width: 20%;
+  height: 40%;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.event_card > h2{
+  text-align: center;
+  color: #fff;
+  /* font-family: 'Roboto Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: Azonix;
+  font-size: 1.3rem;
+}
+
+.card_buttons_cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_button{
+  display: inline-block;
+  width: 70%;
+  padding: 7px 0;
+  text-align: center;
+  color: #fff;
+  /* background: yellow; */
+    background: #06609c;
+  margin: 3px 0;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: Azonix;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 0.8px solid #fff;
+}
+
+.coding_events, .flagship_events, .gaming_events, .uosc_events, .b_events ,.misc_events, .int_events{
+  display: none;
+}
+
+/* Select Events Modal */
+
+.select_event{
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  transition: margin-left 0.75s ease-in,  opacity 1s ease-in;
+}
+
+.close_select_event{
+  margin-left: -100%;
+  opacity: 0;
+}
+
+.open_select_event{
+  margin-right: 0;
+  opacity: 1;
+}
+
+.select_event_button{
+  position: fixed;
+  top: 94%;
+  left: 1.5%;
+  width: 25px;
+  height: 25px;
+  padding: 2.5px;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.select_wrapper{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /* background: url(https://media.giphy.com/media/l3q2KW9gxj2bermVO/giphy.gif); */
+  /* background: url(https://media.giphy.com/media/l3q2KW9gxj2bermVO/giphy.gif); */
+  background-size: cover;
+  background-position: center;
+}
+
+.close_select{
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 7px;
+  font-size: 40px;
+  font-weight: bolder;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 25%;
+}
+
+.select_box{
+  width: 30%;
+  height: 50%;
+  margin: 0 3%;
+  text-align: center;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+
+.select_box > p{
+  font-weight: bold;
+  /* font-family: 'Graduate', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: Azonix;
+}
+
+.robotics, .coding{
+  /* background: #4DD0E1; */
+
+}
+
+.gaming, .uosc{
+/* background: #FFEB3B; */
+}
+
+.flagship, .business{
+/* background: #283593; */
+}
+
+.initiatives, .misc{
+  /* background: #6200EA; */
+font-size: 0.82rem;
+}
+
+/* Event Details Modal */
+.details_modal_close{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 40px;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.event_details_modal{
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.modal_close{
+  display: none;
+}
+
+.left_panel, .right_panel{
+  width: 50%;
+  height: 100%;
+  /* background: red; */
+  display: block;
+  position: relative;
+}
+
+.right_panel {
+  margin-top: 15px;
+}
+
+.header_quit > h2 {
+  margin-left: 50px;
+}
+
+.event_logo{
+  display: block;
+  width: 50%;
+  height: 30%;
+  margin: 2.5%;
+  margin-left: 25%;
+  border-radius: 4px;
+  border: 1px solid white;
+}
+
+.event_name{
+  display: block;
+  width: 100%;
+  text-align: center;
+  /* font-family: 'Roboto Mono', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: Azonix;
+  color: #fff;
+  margin: 5px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.line{
+  width: 45%;
+  height: 1px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0;
+}
+
+.event_contacts{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.header_email{
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.header_email > h2{
+  width: 70%;
+  margin-left: 14px;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: Azonix;
+  color: #fff;
+}
+
+.event_mail{
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+
+.email_logo{width: 30%;}
+
+.event_contact{
+  width: 92%;
+  height: 9%;
+  background: cyan;
+  display: flex;
+  margin: 3% 2%;
+  padding: 0 1.5%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.contact_logo, .contact_phone{
+  display: block;
+  width: 10%;
+  border-radius: 0px;
+}
+
+.contact_phone> img {width: 100%;height: 100%;}
+
+.contact_name{
+  width: 60%;
+  text-align: center;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: Azonix;
+  font-weight: bold;
+}
+
+.participation{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.div1{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.solo, .team{
+  width: 30%;
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  padding: 3%;
+  border-radius: 6px;
+}
+
+.solo > p, .team > p{
+  margin: 0; 
+  color: #fff;
+  text-align: center;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: Azonix;
+}
+
+.solo_img, .team_img{
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 4px;
+}
+
+.event_register{
+  display: block;
+  width: calc(90% - 10%);
+  margin: 5% 5%;
+  margin-left: 8%;
+  padding: 6% 5%;
+  background: #da1111;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: Azonix;
+  font-weight: bold;
+} 
+
+
+.about_section{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header_quit{
+  width: 100%;
+  padding-left: 20px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.about{
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1rem;
+  font-family: Azonix;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 500px){
+  .event_card > h2 ,.card_button{
+    font-size: 1rem;
+  }
+
+  .select_event_button{
+    top: 92%;
+  }
+
+  .header_email > h2{
+    font-size: 1.1rem;
+  }
+
+  .event_mail{cursor: pointer;}
+
+  .event_name{
+    font-size: 0.8rem;
+  }
+
+  .email_logo{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  .event_contact{
+    padding: 0;
+  }
+
+  .contact_name{
+    font-size: 0.5rem;
+  }
+
+  .solo > p, .team > p{
+    font-size: 0.6rem;
+  }
+
+  .event_register{
+    font-size: 1rem;
+  }
+
+  .header_quit > h2{font-size: 1.1rem; font-family: Azonix;}
+
+  .about{font-size: 0.87rem;}
+
+  .select_box > p{
+    font-size: 0.9rem;
+  }
+
+  .initiatives, .misc{
+    font-size: 0.7rem;
+  }
+  .event_card {
+    width: 80%;
+  }
+  .event_card > img {
+    width: 50%;
+  }
+
+}
+.event_card > h2 {
+  margin: 1.1em 0;
+}
+
+.event_details_modal {
+  overflow-x: inherit;
+}
+
+.select_box > p{
+  font-size: 1.2em;
+  /* margin-top: 2px; */
+  margin: 3px;
+}
+
+.select_box > p:hover {
+  font-size: 1.5em;
+}
+
+.floating-btn:hover {
+  color: #fff !important;
+}
+.card_button:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .event_logo {
+    width: 60%;
+  }
+}

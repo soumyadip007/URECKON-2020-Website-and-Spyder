@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ureckon | About</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/about.css" />
+		<link rel="stylesheet" href="css/spinner.css" />
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/b767bbfe51.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/nav.css">
+
+	</head>
+	<body>
+		
+		<!-- Spinner -->
+		<div class="cxq-spinner cxq-spinner--doubleBounce">
+			<div class="cxq-spinner-hexagon cxq-spinner-hexagon-1"></div>
+			<div class="cxq-spinner-hexagon cxq-spinner-hexagon-2 "></div>
+		</div>
+
+		<div id="circularMenu" class="circular-menu">
+		
+			<a class="floating-btn" onclick="document.getElementById('circularMenu').classList.toggle('active');">
+				<i class="fas fa-bars"></i>
+			</a>
+		
+			<menu class="items-wrapper">
+				<a href="/" class="menu-item fas fa-home"></a>
+				<!-- <a href="auth.html" class="menu-item fas fa-user"></a> -->
+				<a href="events.html" class="menu-item far fa-calendar-plus"></a>
+				<!-- <a href="about.html" class="menu-item fas fa-question-circle"></a> -->
+				<a href="sponsors.html" class="menu-item fas fa-handshake"></a>
+                <a href="team.html" class="menu-item fas fa-users"></a>
+
+
+			</menu>
+		
+		</div>
+		<!-- Header -->
+			<header id="header">
+				<div class="logo">
+					<img src="images/logo_icon_white.svg" alt="" height="100" style="margin-bottom: 3em;"> <br>
+					<a href="#">About Us</a>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+
+				<!-- One -->
+					<section id="one" class="wrapper style1">
+						<div class="content">
+							<p>University of Engineering & Management, Kolkata is organizing it’s very own techno-management festival “URECKON”. A seed
+							which was planted in 2018 has already turned into a steady success with it’s roots buried deep into the tradition of
+							excellence upheld by the University. Every year, we aim to make it Bigger and Better. Students and tech enthusiasts from
+							various parts of the world are wholeheartedly invited to be a part of this budding Techno-Management fest, not only to
+							show case their talents but also considering it as a field to learn something new. <br>
+							Several indigenous models are put up on exhibition. There are several events based on Robotics, Coding, B-plan, Quizzes
+							Guest lectures, Tech talks as exciting gaming events with lucrative prizes to be won. Besides, there are events focused
+							on school students too. These events would not only ensure that students are learning from gathering experiences but
+							will also allow them to have an exposure for themselves which is quite beneficial. <br>
+							URECKON is an excellent platform for young minds to perform and excel in fields of not only technology but in business
+							too. Exciting events along with exciting prizes to be won. So fasten up your shoe laces and buckle up your belt to
+							attend URECKON because this year it will be bigger and better!</p>
+						</div>
+					</section>
+
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<!-- <footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Ureckon. All rights reserved.
+				</div>
+			</footer> -->
+
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.poptrox.min.js"></script>
+			<script src="js/skel.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/about.js"></script>
+			
+			<!-- Spinner Script -->
+			<script>
+				$(document).ready(function () {
+						$("#header, #main, #footer, #circularMenu").hide();
+						$("body").css("background-color", "#fff");
+						setTimeout(() => {
+							$(".cxq-spinner").hide();
+							$("body").css("background-color", "#1e1f23");
+							$("#header, #main, #footer, #circularMenu").fadeIn(1000);
+						}, 3000);
+					});		
+			
+			
+			</script>
+
+	</body>
+</html>
