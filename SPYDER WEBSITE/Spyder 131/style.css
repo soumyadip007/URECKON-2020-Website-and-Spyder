@@ -1,0 +1,45 @@
+.navi{
+	color: #ffd633;
+	background: url(navback.jpg) no-repeat center center fixed; 
+	background-size: cover;
+
+	box-shadow: 5px 10px 18px white;
+}
+.pr{
+	color: white;
+}
+html { 
+	background: url(wallpaper.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+body{
+	background-color: transparent;}
+	a:hover {
+		color: white;
+		text-shadow: 2px 2px 4px #ffd633;
+	}
+	.card{
+		background-color: transparent;
+		border: 1px solid white;
+		border-radius: 5px;
+		margin: 5px;
+		box-shadow: 5px 10px 18px yellow;
+	}
+	.abt{
+		color: white;
+		text-shadow: 2px 2px 4px #ffd633;
+	}
+	.hd{
+		color: white;
+		text-shadow: 2px 2px 4px #ffd633;
+	}
+	.card-title{
+		color: white;
+		text-shadow: 1px 1px 2px blue;
+	}
+.ft{
+	color: white;
+}

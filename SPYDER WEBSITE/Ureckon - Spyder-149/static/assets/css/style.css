@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+
+html, body{
+    outline: 0;
+    padding: 0px;
+    margin: 0px;
+    background: #ecf0f1;
+}
+
+::selection{
+    color: #27ae60;
+}
+
+.bg-light, .navbar-light{
+    background: rgba(0,0,0,.9) !important;
+}
+
+.navbar{
+    padding: 14px 10px 14px 10px;
+}
+
+.nav-link{
+    color: #ecf0f1 !important;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.nav-link:hover{
+    color: rgba(255,255,255,0.7) !important;
+}
+
+.navbar-brand{
+    margin-right: 25px;
+    font-size: 22px;
+    color: #fff !important;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#lang{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+video{
+    margin: 0px;
+    padding: 0px;
+    margin-top: -120px;
+    overflow: hidden;
+    z-index: 1 !important;
+}
+
+.header{
+    height: 60.5vh;
+    overflow: hidden;
+}
+
+.box{
+    margin: 0px;
+    padding: 30px;
+    background: #ecf0f1;
+    border: none;
+    border-radius: none;
+    outline: 0;
+    width: 1000px;
+    padding: 20px;
+    z-index: 99 !important;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.26);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.26);
+    border: .99px solid rgba(0,0,0,.3);
+}
+
+.box{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box:focus{
+    transform: scale(1.07);
+}
+
+.overlay{
+    margin-top: -26%;
+}
+
+.cardBox{
+    margin: 0px;
+    padding: 0px;
+    height: 420px;
+    width: 300px;
+    margin-left: 50px;
+    margin-right: 20px;
+    padding: 30px 30px 0px 30px;
+    z-index: 99 !important;
+    margin-top: 100px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.46); 
+box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.46);
+}
+
+#cards{
+    z-index: 99 !important;
+    margin-right: 15px;
+}
+
+#card1{
+    background: url('https://images.unsplash.com/photo-1543029273-40b2069bbad8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+#card2{
+    background: url('https://www.mtbpro.es/sites/default/files/fotosprincipales/trek_fuel_ex_2020_mtbpro_0015.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#card3{
+    background: url('https://images.wallpaperscraft.com/image/cycling_race_athlete_helmet_96884_2048x1152.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-primary{
+    margin: 0px;
+    padding; 0px;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 0px;
+    background: rgba(255,255,255,.9);
+    width: 150px;
+    border-radius: 200px;
+    margin-top: 202%;
+    color: #000;
+    transition: .3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.btn-primary:hover{
+    transition: .3s ease;
+    color: #ecf0f1;
+    background: rgba(0,0,0,.9);
+}
+
+#section2{
+    height: 40vh;
+    margin-top: 130px;
+    padding: 30px;
+}
+
+h3{  
+    font-size: 42px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+#section2 p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: rgba(0,0,0,.9);
+}
+
+#appAppleDownload, #appGoogleDownload{
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+#appGoogleDownload{
+    width: 220px;
+    margin-top: 35px;
+}
+
+footer{
+    margin: 0px;
+    padding: 40px;
+    background: rgba(0,0,0,.9);
+    margin-top: 50px;
+}
+
+h2{
+    margin: 0px;
+    padding: 0px;
+    color: #ecf0f1;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 35px;
+}
+
+footer ul li{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+footer ul{
+    margin-top: -35px;
+}
+
+footer ul li{
+    color: #ecf0f1;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#hr{
+    margin: 0px;
+    padding: 0px;
+    background: rgba(255,255,255,0.7);
+    margin-top: 40px;
+    height: 1px;
+    width: 100%;
+    border-radius: 100px;
+    margin-left:300px;
+}
+
+footer p{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: rgba(236, 240, 241,.5);
+}
+
+.navbar-inverse .navbar-toggle .icon-bar{
+    color: #ecf0f1 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  
+    
+    video{
+        display: none;
+    }
+    
+    .box{
+        width: 350px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 100px;
+    }
+    
+    footer{
+        margin-top: 120px;
+    }
+    
+    footer ul{
+       margin-top: 15px; 
+    }
+}

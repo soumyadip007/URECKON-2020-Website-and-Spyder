@@ -1,0 +1,108 @@
+.navbar-brand img{
+	width:80px;
+	height:60px;
+	background: white;
+	border:1.5px solid black;
+	border-radius:10px;
+}
+	.dropdown:hover .dropdown-menu{
+		display:block;
+	}
+	.dropdown-menu{
+		margin-top:0;
+	}
+nav{
+	background:black;
+}
+.navbar-nav a{
+	margin-left:8px;
+}
+.navbar-nav a:hover{
+      color:white;
+      border-bottom:0.9px solid white;
+      border-top:0.9px solid white;
+}
+#navbarNavDropdown form{
+	margin-left:190px;
+}
+.dropdown-menu{
+	background: linear-gradient(to right,#434343,#000000);
+}
+.dropdown-menu a{
+	color:#fff;
+	 margin-left:0;
+}
+.dropdown-menu a:hover{
+	background-color:#000;
+}
+
+
+
+.container-fluid{
+	margin-top:5px;
+}
+.carousel-inner{
+	width:100%;
+	max-height:700px;
+}
+
+.carousel-item img{
+	display:inline-block !important;
+	text-align: -webkit-center;
+	-webkit-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0);
+}
+.carousel-caption{
+	text-align:center;
+	top:40%;	
+}
+.carousel-caption h1{
+	font-size:45px;
+	font-weight:bold;
+}
+@media screen and (max-width: 700px)
+{
+  .carousel-caption h1{
+    font-size:20px;
+    font-weight: bold;
+  }
+}
+.carousel-caption p{
+	font-size:25px;
+}
+
+.we-do-main {
+    text-align: center;
+}
+.we-do-main h2 {
+    font-size: 3em;
+    color:#a2b040;
+    margin-bottom: 0.2em;
+    font-family: 'Marvel', sans-serif;
+}
+.we-do-main h4 {
+    font-size: 1em;
+    color: #000;
+    letter-spacing: 3px;
+    margin-bottom: 0.5em;
+}
+.we-do-main p {
+    font-size: 1em;
+    color:#777676;
+    width: 65%;
+    line-height: 1.8em;
+    margin:2em auto 0.7em;
+}
+.we-do-main a {
+    font-size: 0.9em;
+    color:#f2af00;
+    padding: 0.6em 1.5em;
+    border-radius: 30px;
+    border:2px solid #f2af00;
+    margin-top: 0.5em;
+    display: inline-block;
+}
+.we-do-main a:hover{
+  color:#a2b040;
+  border:2px solid #a2b040;
+}

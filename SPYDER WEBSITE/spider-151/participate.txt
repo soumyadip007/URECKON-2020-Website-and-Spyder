@@ -1,0 +1,13 @@
+Team ID : Spyder-151
+
+participate 1 Details 
+Name : Subham Sharma
+Email ID : ksubham.sharma@gmail.com
+Phone : +91 9051137398
+Organisation : Institude Of Engineering & Management
+
+participate 2 Details 
+Name : Yash Kanoria 
+Email ID : yashbattu@gmail.com
+Phone : +91 9830318438
+Organisation : Institude Of Engineering & Management

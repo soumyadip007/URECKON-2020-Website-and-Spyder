@@ -1,0 +1,98 @@
+body {
+  background: #34495e;
+  font: normal 300 18px "Roboto", sans-serif;
+}
+ 
+#menu-nav {
+  max-width: 1000px;
+  margin: 130px auto;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+ 
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navigation-bar li {
+  float: left;
+  width: 20%;
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
+  color: #848484;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#navigation-bar a:hover {
+  color: #e74c3c;
+}
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: #e74c3c;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+ 
+li {
+	list-style: none;
+}
+.div1{
+    height:200px;
+    width:100%;
+     display: flex;
+  flex-direction: row;
+    z-index: 99;
+    padding-right: 100px;
+
+    
+}
+.div2{
+    height:200px;
+    width:100%;
+     display: flex;
+  flex-direction: row;
+    z-index: 99;
+    padding-right: 100px;
+
+    
+}
+.price
+{
+    height: 50px;
+    width:100%;
+    background-color:black;
+    
+}
+.p{
+    height:10px;
+    width:200px;
+    background-color: aqua;
+    display:flex;
+    flex-direction:column;
+    
+}
+img: hover{
+   filter: blur(10px);
+}
+h1{
+    z-index: 100;
+    color: azure;
+}

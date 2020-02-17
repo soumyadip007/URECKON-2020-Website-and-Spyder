@@ -1,0 +1,130 @@
+*{
+    box-sizing:border-box;
+}
+header
+{
+    background-image:url("Bg.jpg");
+    background-attachment:fixed;
+    padding:2px;
+    height:140px;
+    min-height:130px;
+}
+header img
+{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:330px;
+    height:130px;
+    padding-top: 4px;
+}
+#Mobiles,#EA,#Men,#Women,#Books
+{
+	position:relative;
+}
+.flex_container
+{
+	justify-content:space-around;
+	display:flex;
+	flex-direction:row;
+	background-color:#f3a8a8;
+}
+.flex_container > div {
+  background-color: #f3a8a8;
+  width: 260px;
+  margin: 5px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+.flex_container > div:hover,.flex_container > div:focus
+{
+	background-color:lightblue;
+	border:0px solid lightblue;
+    border-radius:8px;
+    font-size: 24px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .flex_container1 {
+  padding-top: 60px;
+}
+.flex_container1
+{
+	display:flex;
+	flex-direction:column;
+	margin:10px 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+	border:0px solid #ffffff;
+	border-radius:5px;
+}
+.uppercont
+{
+	background-color:#e6ffe6;
+	flex-direction:row;
+	justify-content:space-between;
+	border-bottom:2px solid rgba(0,0,0,0.2);
+}
+.hd1
+{
+	font-size:2em;
+	padding:5px 30px;
+	font-weight:bold;
+    width:100%;
+    text-align: center;
+}
+.lowercont
+{
+	padding:10px 10px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.OffPro
+{
+	width:200px;
+}
+.proimg
+{
+	width:100%;
+	height:225px;
+}
+.proimg>img
+{
+	height:97%;
+	width:97%;
+	margin:auto;
+	display:block;
+	vertical-align:middle;
+	object-fit:contain;
+}
+.proimg>img:hover
+{
+	height:100%;
+	width:100%;
+}
+.protxt
+{
+	text-overflow:ellipsis;
+	max-height:37px;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.procost>.originalcost
+{
+	text-decoration:line-through;
+	width:90px;
+	display:inline-block;
+	text-align:right;
+	color:black;
+}
+.procost>.newcost
+{
+	color:#00cc00;
+	width:90px;
+	display:inline-block;
+	text-align:right;
+}

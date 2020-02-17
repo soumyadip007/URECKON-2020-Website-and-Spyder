@@ -1,0 +1,89 @@
+body{
+    background-image: url("assets\\bgImage.png");
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    padding: 10px;
+}
+
+.nav-holder {
+    position: relative;
+    margin: 0 auto;
+    top: 20%;
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li{
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transition: all 1s ease-in-out;
+    transform: rotate(180deg);
+    animation-fill-mode: forwards;
+    background-color: yellow;
+    color: white;
+}
+
+.section-bg {
+    background-color: rgba(19, 97, 107, 0.664);
+    height: 400px;
+}
+
+.container {
+    color: white;
+    opacity: 0.9;
+}
+
+.image_border {
+    animation-name: image;
+    animation-delay: 4s;
+}
+
+.contact-bg{
+    background-color:rgba(0,0,0,0.5);
+    color: beige;
+}
+
+@keyframes image{
+    0% {opacity: 0;}
+    100%{opacity: 1;} 
+}
+
+.box {
+    background: white;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation-name: myFunkyAnimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    /* animation-delay: 2s; */
+    /* animation-direction: reverse; */
+}
+
+@keyframes myFunkyAnimation {
+    0% {background-color: white; left: 0px; top: 0px; border-radius: 0 0 0 0;}
+    25% {background-color: purple; left: 100px; top: 0px; border-radius: 50% 0 0 0;}
+    50% {background-color: aqua; left: 100px; top: 200px; border-radius: 50% 50% 0 0;}
+    75% {background-color: maroon; left: 0px; top: 200px; border-radius: 50% 50% 50% 0;}
+    100% {background-color: white; left: 0px; top: 0px; border-radius: 50% 50% 50% 50%;}
+}

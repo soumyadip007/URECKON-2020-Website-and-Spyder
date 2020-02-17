@@ -1,0 +1,127 @@
+body{
+	background-image:linear-gradient(to right,#ff5722,#ff9800);
+	margin:5px;
+}
+
+.register-left{
+	text-align: center;
+	color:#fff;
+	padding:30px;
+}
+#pointer {
+	margin-top:20px;
+	margin-bottom: 18px;
+	width:100px;
+	animation:mover 1s infinite alternate;
+}
+
+.logo a{
+	margin:0 10px;
+}
+.register-left p{
+	padding:20px 20px 0;
+}
+
+.register-left .btn-primary{
+	border-radius: 1.5em;
+	border:none;
+	width:120px;
+	background: #f8f8f8;
+	font-weight: 600;
+	color:#555;
+	margin-top:20px;
+	padding:10px;
+}
+
+.register-left .btn-primary:hover{
+	background: #000;
+}
+
+.register-right{
+	border:none;
+	background: #f8f8f8;
+	border-radius:10px;
+	padding:50px;	
+}
+
+.register-right h1{
+	text-align: center;
+	margin-bottom: 10px;
+	color:#555;
+}
+
+.register-form{
+	padding:30px;
+}
+.register-form .form-group input{
+	border:none;
+	border-bottom:1px solid #000;
+	background: none;
+	text-align: center;
+	border-radius: 0;
+}
+.register-form .form-group input:focus{
+	box-shadow: none;
+	border-bottom: 2px solid #222;
+}
+/*.register-form .form-group input[type="text"]{
+	text-transform: uppercase;
+} */
+.register-right .btn-primary{
+	float:right;
+	border-radius: 1.5em;
+	border:none;
+	width:120px;
+	background: #ff9800;
+	font-weight: 600;
+	color:#fff;
+	margin-top:20px;
+	padding:10px;
+}
+
+.register-right .btn-primary:hover{
+	background: #000;
+}
+
+@keyframes mover{
+	0%
+	{
+		transform:translateY(0);
+	}
+	100%
+	{
+		transform:translateY(-20px);
+	}
+}
+
+.fa-facebook-f{
+	color:blue;
+	}
+
+.fa-youtube{
+	color:#800000;
+}
+.fa-instagram{
+	color:#800000;
+}
+
+footer{
+	width:100%;
+	height:60px;
+	background:black;
+}
+
+footer p{
+	text-align: center;
+	padding-top:13px;
+
+	color:white;
+}
+
+#logintype{
+	text-align: center;
+	
+}
+#logintype input{
+	margin-left:20px;
+}
